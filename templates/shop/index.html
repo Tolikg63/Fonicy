@@ -1,22 +1,18 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
-
 <head>
-  <!-- Basic -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <!-- Mobile Metas -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <!-- Site Metas -->
   <meta name="keywords" content="" />
   <meta name="description" content="" />
   <meta name="author" content="" />
-
   <title>Fonicy</title>
 
 
   <!-- bootstrap core css -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}" />
 
   <!-- fonts style -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -25,12 +21,12 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 
   <!-- font awesome style -->
-  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="{% static 'css/font-awesome.min.css' %}" rel="stylesheet" />
 
   <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet" />
+  <link href="{% static 'css/style.css' %}" rel="stylesheet" />
   <!-- responsive style -->
-  <link href="css/responsive.css" rel="stylesheet" />
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet" />
 
 </head>
 
@@ -43,11 +39,11 @@
         <div class="container-fluid header_top_container">
           <div class="lang_box dropdown">
             <a href="#" title="Language" class="nav-link" data-toggle="dropdown" aria-expanded="true">
-              <img src="images/flag-uk.png" alt="flag" class=" " title="United Kingdom"> <i class="fa fa-angle-down " aria-hidden="true"></i>
+              <img src="{% static 'images/flag-uk.png' %}" alt="flag" class=" " title="United Kingdom"> <i class="fa fa-angle-down " aria-hidden="true"></i>
             </a>
             <div class="dropdown-menu ">
               <a href="#" class="dropdown-item">
-                <img src="images/flag-france.png" class="" alt="flag">
+                <img src="{% static 'images/flag-france.png' %}" class="" alt="flag">
               </a>
             </div>
             <span>
@@ -94,7 +90,7 @@
         <div class="container-fluid">
           <nav class="navbar navbar-expand-lg custom_nav-container ">
             <a class="navbar-brand" href="index.html">
-              <img src="images/logo.png" alt="">
+              <img src="{% static 'images/logo.png' %}" alt="">
             </a>
             </a>
 
@@ -683,7 +679,7 @@
       <div class="why_us_container">
         <div class="box">
           <div class="img-box">
-            <img src="images/w1.png" alt="">
+            <img src="{% static 'images/w1.png' %}" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -699,7 +695,7 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="images/w2.png" alt="">
+            <img src="{% static 'images/w2.png' %}" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -715,7 +711,7 @@
         </div>
         <div class="box">
           <div class="img-box">
-            <img src="images/w3.png" alt="">
+            <img src="{% static 'images/w3.png' %}" alt="">
           </div>
           <div class="detail-box">
             <h5>
@@ -835,22 +831,22 @@
               </h5>
               <div class="post_box">
                 <div class="img-box">
-                  <img src="images/instagram.jpg" alt="">
+                  <img src="{% static 'images/instagram.jpg' %}" alt="">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram.jpg" alt="">
+                  <img src="{% static 'images/instagram.jpg' %}" alt="">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram.jpg" alt="">
+                  <img src="{% static 'images/instagram.jpg' %}" alt="">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram.jpg" alt="">
+                  <img src="{% static 'images/instagram.jpg' %}" alt="">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram.jpg" alt="">
+                  <img src="{% static 'images/instagram.jpg' %}" alt="">
                 </div>
                 <div class="img-box">
-                  <img src="images/instagram.jpg" alt="">
+                  <img src="{% static 'images/instagram.jpg' %}" alt="">
                 </div>
               </div>
             </div>
@@ -875,7 +871,7 @@
           <div class="col-md-2">
             <div class="info_logo">
               <a href="">
-                <img src="images/logo2.png" alt="">
+                <img src="{% static 'images/logo2.png' %}" alt="">
               </a>
             </div>
           </div>
@@ -915,19 +911,19 @@
   <!-- footer section -->
 
   <!-- jQery -->
-  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
   <!-- popper js -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
   </script>
   <!-- bootstrap js -->
-  <script src="js/bootstrap.js"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
   <!-- owl slider -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
   </script>
   <!--  OwlCarousel 2 - Filter -->
   <script src="https://huynhhuynh.github.io/owlcarousel2-filter/dist/owlcarousel2-filter.min.js"></script>
   <!-- custom js -->
-  <script src="js/custom.js"></script>
+  <script src="{% static 'js/custom.js' %}"></script>
   <!-- Google Map -->
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap">
   </script>
