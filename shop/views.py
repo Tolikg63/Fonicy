@@ -11,3 +11,11 @@ def services(request: HttpRequest):
         'services': Service.objects.all()
     }
     return render(request, 'shop/service.html', context=context)
+
+
+def about(request: HttpRequest):
+    return render(request, 'shop/about.html')
+
+
+def projects(request: HttpRequest):
+    return render(request, 'shop/project.html')
