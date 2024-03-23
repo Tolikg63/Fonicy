@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpRequest
-from .models import Service
+from .models import Service, Project
 
 def index(request: HttpRequest):
     return render(request, 'shop/index.html')
@@ -18,4 +18,7 @@ def about(request: HttpRequest):
 
 
 def projects(request: HttpRequest):
-    return render(request, 'shop/project.html')
+    context = {
+        'projects': Project.objects.all()
+    }
+    return render(request, 'shop/project.html', context=context)
